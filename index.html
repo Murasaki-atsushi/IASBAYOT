@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" sizes="48x48" href="logo.png">
+
+
+</head>
+<body>
+    <div class="profile-update-container">
+        <h2>Edit Profile</h2>
+        <div class="profile-pic-container">
+            <img id="profilePicPreview" class="profile-pic" src="defaultpfp.jpg" alt="Profile Picture Preview">
+            <label class="upload-btn">
+                <input type="file" id="profilePic" name="profilePic" accept="image/*">
+                Change Profile Photo
+            </label>
+        </div>
+        
+
+        <form id="profileForm">
+            <div class="input-container">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+          
+            <div class="input-container">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            
+            <div class="input-container">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-container">
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio" placeholder="Tell us about yourself..." required></textarea>
+            </div>
+
+            <div class="input-container">
+                <label for="pronouns">Pronouns</label>
+                <select id="pronouns" name="pronouns" required>
+                    <option value="he/him">He/Him ♂</option>
+                    <option value="she/her">She/Her ♀</option>
+                    <option value="they/them">They/Them ⚧</option>
+                    <option value="other">Other</option> 
+                </select>
+            </div>
+
+            <div class="input-container">
+                <label for="gallery">Add Featured Photo</label>
+                <input type="file" id="gallery" name="gallery" accept="image/*" multiple>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
