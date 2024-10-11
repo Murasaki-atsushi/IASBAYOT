@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="profile-container">
+        <!-- Home Button -->
+        <div class="button-container">
+            <a href="index.html" class="home-button">Home</a>
+        </div>
+        
+        <h2>Profile</h2>
+
+        <!-- Profile Picture Section -->
+        <div class="profile-pic-container">
+            <img id="profilePic" class="profile-pic" src="defaultpfp.png" alt="Profile Picture"> <!-- Default Picture -->
+        </div>
+
+        <!-- User Info Section -->
+        <p><strong>Username:</strong> <span id="username"></span></p>
+        <p><strong>Email:</strong> <span id="email"></span></p>
+
+        <!-- Bio Section -->
+        <p><strong>Bio:</strong> <span id="bio" class="bio"></span></p>
+
+        <!-- Pronouns Section -->
+        <p><strong>Pronouns:</strong> <span id="pronouns"></span></p>
+
+        <!-- Gallery Section -->
+        <div id="galleryContainer" class="gallery-container">
+            <h3>Featured Photos</h3>
+            <div id="gallery"></div> <!-- Gallery for images -->
+        </div>
+    </div>
+
+    <script src="page2.js"></script>
+</body>
+</html>
